@@ -200,8 +200,6 @@ def create_app(test_config=None):
         if questions:
             question = random.choice(questions)
             result["question"] = question.format()  # Assuming Question model has a format method for serialization
-        else:
-            result["question"] = {}  # Return an empty object if no questions found
         
         return jsonify(result)
     """
