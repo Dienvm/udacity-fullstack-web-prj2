@@ -11,7 +11,7 @@
 3. **PIP Dependencies** - Once your virtual environment is setup and running, install the required dependencies by navigating to the `/backend` directory and running:
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 #### Key Pip Dependencies
@@ -23,6 +23,16 @@ pip install -r requirements.txt
 - [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) is the extension we'll use to handle cross-origin requests from our frontend server.
 
 ### Set up the Database
+
+Create a .env config the same on .env.example
+
+```
+DB_USER='your_username'
+DB_PASSWORD='your_password'
+DB_HOST='localhost'
+DB_PORT='5432'
+DB_NAME='trivia'
+```
 
 With Postgres running, create a `trivia` database:
 
