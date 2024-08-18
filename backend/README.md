@@ -340,3 +340,7 @@ export DB_HOST='localhost'
 export DB_PORT='5432'
 python3 test_flaskr.py
 ```
+
+### Test result
+
+![Test result](./run-test.png)
